@@ -6,6 +6,7 @@ This project is a basic Book Recommendation System that leverages FastAPI for th
 
 ## Project Structure
 
+```plaintext
 ml-ai-skeleton/
 │
 ├── app/
@@ -57,6 +58,7 @@ ml-ai-skeleton/
 ├── .env
 ├── .gitignore
 └── README.md
+```
 
 ## Getting Started
 
