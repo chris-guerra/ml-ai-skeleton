@@ -16,11 +16,6 @@ ml-ai-skeleton/
 │   ├── ml/
 │   └── main.py
 │
-├── streamlit/
-│   ├── pages/
-│   ├── assets/
-│   └── app.py
-│
 ├── docker/
 │   ├── Dockerfile
 │   ├── Dockerfile.streamlit
