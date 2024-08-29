@@ -1,0 +1,42 @@
+# Exclude common unnecessary files and directories from the build context
+
+**/.DS_Store               # MacOS system files
+**/__pycache__             # Python bytecode cache directories
+**/.venv                   # Python virtual environments
+**/.classpath              # Java classpath files
+**/.dockerignore           # Ignore the .dockerignore file itself
+**/.env                    # Environment variable files (typically contain secrets)
+**/.git                    # Git version control directories
+**/.gitignore              # Ignore the .gitignore file itself
+**/.project                # Project metadata files
+**/.settings               # IDE settings files
+**/.toolstarget            # .NET tool target files
+**/.vs                     # Visual Studio specific files
+**/.vscode                 # Visual Studio Code workspace settings
+**/*.*proj.user            # User-specific project files (e.g., .csproj.user)
+**/*.dbmdl                 # Database model files
+**/*.jfm                   # JetForm files (legacy form files)
+**/bin                     # Compiled binary files
+**/charts                  # Helm charts
+**/docker-compose*         # Docker Compose files
+**/compose.y*ml            # Docker Compose YAML files
+**/Dockerfile*             # Dockerfiles
+**/node_modules            # Node.js dependencies
+**/npm-debug.log           # npm debug logs
+**/obj                     # Compiled object files
+**/secrets.dev.yaml        # Kubernetes secrets (development environment)
+**/values.dev.yaml         # Helm values files for development
+LICENSE                    # License file
+README.md                  # Readme file
+
+# Additional exclusions specific to your project
+db/password.txt            # Exclude database password file
+data/                      # Exclude data directory (if applicable)
+*.log                      # Log files
+*.sqlite3                  # SQLite database files
+coverage/                  # Code coverage reports
+build/                     # Build directories
+dist/                      # Distribution files
+
+# Include any files or directories that you don't want to be copied to your
+# container here (e.g., local build artifacts, temporary files, etc.).

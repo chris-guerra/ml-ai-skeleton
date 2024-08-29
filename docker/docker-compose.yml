@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: ..
+      dockerfile: docker/fastapi/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src/fastapi:/app
+
+  streamlit:
+    build:
+      context: ..
+      dockerfile: docker/streamlit/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./src/streamlit:/app
