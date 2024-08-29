@@ -1,0 +1,1 @@
+gunicorn             # WSGI HTTP server for deploying FastAPI

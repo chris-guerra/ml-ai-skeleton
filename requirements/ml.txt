@@ -1,0 +1,4 @@
+scikit-learn         # Core ML library for simple models and data processing
+pandas               # Data manipulation and analysis
+numpy                # Numerical operations
+scipy                # Advanced statistical operations

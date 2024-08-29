@@ -1,0 +1,4 @@
+uvicorn[standard]    # A common ASGI server, useful for running FastAPI
+SQLAlchemy           # ORM for interacting with PostgreSQL
+psycopg2-binary      # PostgreSQL adapter for Python
+pydantic             # Data validation and settings management

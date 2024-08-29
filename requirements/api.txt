@@ -1,0 +1,2 @@
+fastapi              # The core web framework for building APIs
+alembic              # Database migrations for SQLAlchemy

@@ -1,0 +1,5 @@
+pytest               # Testing framework
+black                # Code formatter
+flake8               # Linter for Python code
+isort                # Utility to sort imports
+mypy                 # Static type checker
