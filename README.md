@@ -66,7 +66,6 @@ ml-ai-skeleton/
 
 1. Clone the repository
 git clone https://github.com/yourusername/book-recommendation-system.git
-cd book-recommendation-system
 2. Set up environment variables: Create a .env file in the root directory with the necessary environment variables (e.g., database credentials, API keys).
 3. Install dependencies: Install the dependencies by combining the relevant requirements files.
 4. Run the application: Use Docker Compose to build and run the containers: docker compose up --build -d

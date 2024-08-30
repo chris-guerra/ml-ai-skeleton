@@ -1,20 +1,20 @@
 services:
   api:
     build:
-      context: .
-      dockerfile: docker/Dockerfile
+      context: ..
+      dockerfile: docker/Dockerfile         # FastAPI Dockerfile path
     ports:
       - "8000:8000"
     depends_on:
       - postgres
       - quadrant
     environment:
-      DATABASE_URL: "postgresql://your_username:your_password@postgres:5432/your_dbname"
+      DATABASE_URL: "postgresql://admin:root@postgres:5432/mlbooks_db"
 
   streamlit:
     build:
-      context: .
-      dockerfile: docker/Dockerfile.streamlit
+      context: ..
+      dockerfile: docker/Dockerfile.streamlit  # Streamlit Dockerfile path
     ports:
       - "8501:8501"
     depends_on:
@@ -22,17 +22,18 @@ services:
 
   quadrant:
     build:
-      context: .
-      dockerfile: docker/quadrant.Dockerfile
+      context: ..
+      dockerfile: docker/quadrant.Dockerfile  # Quadrant Dockerfile path
     ports:
-      - "5000:5000"
+      - "6333:6333"
 
   postgres:
     image: postgres:13
+    hostname: localhost
     environment:
-      POSTGRES_USER: your_username
-      POSTGRES_PASSWORD: your_password
-      POSTGRES_DB: your_dbname
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: mlbooks_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
